@@ -1,0 +1,1221 @@
+{
+  "method": "Chromium, self-contained static-site preview rendered with set_content; no hosted deployment tested.",
+  "widths": [
+    320,
+    390,
+    620,
+    768,
+    1024,
+    1440,
+    1920
+  ],
+  "pages": [
+    "404.html",
+    "about.html",
+    "contact.html",
+    "index.html",
+    "privacy.html",
+    "products/access-and-suction.html",
+    "products/biomaterial-innovation.html",
+    "products/endoscopy.html",
+    "products/guidewires.html",
+    "products/index.html",
+    "products/stone-retrieval.html",
+    "products/ureteral-stents.html",
+    "style-guide.html"
+  ],
+  "layouts": [
+    {
+      "page": "404.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "about.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "contact.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "index.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "privacy.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/access-and-suction.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/biomaterial-innovation.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/endoscopy.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/guidewires.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/index.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/stone-retrieval.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/ureteral-stents.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "style-guide.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "404.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "about.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "contact.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "index.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "privacy.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/access-and-suction.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/biomaterial-innovation.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/endoscopy.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/guidewires.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/index.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/stone-retrieval.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/ureteral-stents.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "style-guide.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "404.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "about.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "contact.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "index.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "privacy.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/access-and-suction.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/biomaterial-innovation.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/endoscopy.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/guidewires.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/index.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/stone-retrieval.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/ureteral-stents.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "style-guide.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "404.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "about.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "contact.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "index.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "privacy.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/access-and-suction.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/biomaterial-innovation.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/endoscopy.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/guidewires.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/index.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/stone-retrieval.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/ureteral-stents.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "style-guide.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "404.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "about.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "contact.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "index.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "privacy.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/access-and-suction.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/biomaterial-innovation.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/endoscopy.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/guidewires.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/index.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/stone-retrieval.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/ureteral-stents.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "style-guide.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "404.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "about.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "contact.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "index.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "privacy.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/access-and-suction.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/biomaterial-innovation.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/endoscopy.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/guidewires.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/index.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/stone-retrieval.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/ureteral-stents.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "style-guide.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "404.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "about.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "contact.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "index.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "privacy.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/access-and-suction.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/biomaterial-innovation.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/endoscopy.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/guidewires.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/index.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/stone-retrieval.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/ureteral-stents.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    },
+    {
+      "page": "style-guide.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "missingIconNames": 0,
+      "overflow": []
+    }
+  ],
+  "interactions": {
+    "search_filter_empty_state_escape_focus_and_navigation": "pass",
+    "mobile_menu_navigation_escape": "pass",
+    "pending_and_configured_email_without_sending": "pass",
+    "native_faq_expansion": "pass"
+  },
+  "issues": [],
+  "icon_bounds": [
+    {
+      "id": "home",
+      "x": 7,
+      "y": 7,
+      "width": 50,
+      "height": 50,
+      "withinCanvas": true
+    },
+    {
+      "id": "purpose",
+      "x": 4,
+      "y": 9,
+      "width": 56,
+      "height": 46,
+      "withinCanvas": true
+    },
+    {
+      "id": "product-segments",
+      "x": 8,
+      "y": 8,
+      "width": 48,
+      "height": 48,
+      "withinCanvas": true
+    },
+    {
+      "id": "endoscopy",
+      "x": 7,
+      "y": 8,
+      "width": 52,
+      "height": 43,
+      "withinCanvas": true
+    },
+    {
+      "id": "access-and-suction",
+      "x": 9,
+      "y": 9,
+      "width": 49,
+      "height": 48,
+      "withinCanvas": true
+    },
+    {
+      "id": "stone-retrieval",
+      "x": 7,
+      "y": 16,
+      "width": 41,
+      "height": 41,
+      "withinCanvas": true
+    },
+    {
+      "id": "guidewires",
+      "x": 9,
+      "y": 9,
+      "width": 49,
+      "height": 45.54240036010742,
+      "withinCanvas": true
+    },
+    {
+      "id": "ureteral-stents",
+      "x": 9,
+      "y": 4.909999847412109,
+      "width": 49.279998779296875,
+      "height": 51.97999954223633,
+      "withinCanvas": true
+    },
+    {
+      "id": "biomaterial-innovation",
+      "x": 8.100000381469727,
+      "y": 7.099999904632568,
+      "width": 45.80000305175781,
+      "height": 50.79999923706055,
+      "withinCanvas": true
+    },
+    {
+      "id": "research",
+      "x": 4,
+      "y": 3,
+      "width": 56,
+      "height": 54,
+      "withinCanvas": true
+    },
+    {
+      "id": "quality",
+      "x": 9,
+      "y": 6,
+      "width": 46,
+      "height": 53,
+      "withinCanvas": true
+    },
+    {
+      "id": "packaging",
+      "x": 7,
+      "y": 7,
+      "width": 50,
+      "height": 51,
+      "withinCanvas": true
+    },
+    {
+      "id": "catalogue",
+      "x": 12,
+      "y": 6,
+      "width": 40,
+      "height": 51,
+      "withinCanvas": true
+    },
+    {
+      "id": "partnerships",
+      "x": 5,
+      "y": 12,
+      "width": 54,
+      "height": 40.647579193115234,
+      "withinCanvas": true
+    },
+    {
+      "id": "contact",
+      "x": 5,
+      "y": 12,
+      "width": 54,
+      "height": 41,
+      "withinCanvas": true
+    },
+    {
+      "id": "distribution",
+      "x": 5,
+      "y": 5,
+      "width": 52,
+      "height": 53,
+      "withinCanvas": true
+    },
+    {
+      "id": "clinician",
+      "x": 6,
+      "y": 3,
+      "width": 52,
+      "height": 55,
+      "withinCanvas": true
+    },
+    {
+      "id": "precision",
+      "x": 3,
+      "y": 3,
+      "width": 58,
+      "height": 58,
+      "withinCanvas": true
+    },
+    {
+      "id": "innovation",
+      "x": 5.400000095367432,
+      "y": 5.400000095367432,
+      "width": 53.19999694824219,
+      "height": 53.19999694824219,
+      "withinCanvas": true
+    },
+    {
+      "id": "outcomes",
+      "x": 7,
+      "y": 6,
+      "width": 50,
+      "height": 51,
+      "withinCanvas": true
+    },
+    {
+      "id": "evidence",
+      "x": 13,
+      "y": 6,
+      "width": 45,
+      "height": 52,
+      "withinCanvas": true
+    },
+    {
+      "id": "delivery",
+      "x": 7,
+      "y": 13,
+      "width": 39,
+      "height": 47.99654769897461,
+      "withinCanvas": true
+    },
+    {
+      "id": "gel-capture",
+      "x": 6.607797622680664,
+      "y": 7.257989406585693,
+      "width": 50.89220428466797,
+      "height": 49.084068298339844,
+      "withinCanvas": true
+    },
+    {
+      "id": "arrow-right",
+      "x": 5,
+      "y": 6,
+      "width": 14,
+      "height": 12,
+      "withinCanvas": true
+    },
+    {
+      "id": "arrow-up-right",
+      "x": 6,
+      "y": 6,
+      "width": 12,
+      "height": 12,
+      "withinCanvas": true
+    },
+    {
+      "id": "arrow-left",
+      "x": 5,
+      "y": 6,
+      "width": 14,
+      "height": 12,
+      "withinCanvas": true
+    },
+    {
+      "id": "arrow-up",
+      "x": 6,
+      "y": 5,
+      "width": 12,
+      "height": 14,
+      "withinCanvas": true
+    },
+    {
+      "id": "search",
+      "x": 4,
+      "y": 4,
+      "width": 16.5,
+      "height": 16.5,
+      "withinCanvas": true
+    },
+    {
+      "id": "close",
+      "x": 6,
+      "y": 6,
+      "width": 12,
+      "height": 12,
+      "withinCanvas": true
+    },
+    {
+      "id": "menu",
+      "x": 4,
+      "y": 6,
+      "width": 16,
+      "height": 12,
+      "withinCanvas": true
+    },
+    {
+      "id": "chevron-right",
+      "x": 9,
+      "y": 5,
+      "width": 7,
+      "height": 14,
+      "withinCanvas": true
+    },
+    {
+      "id": "info",
+      "x": 3,
+      "y": 3,
+      "width": 18,
+      "height": 18,
+      "withinCanvas": true
+    },
+    {
+      "id": "check",
+      "x": 5,
+      "y": 6,
+      "width": 14,
+      "height": 10,
+      "withinCanvas": true
+    }
+  ],
+  "runtime_errors": [],
+  "layout_count": 91,
+  "result": "PASS",
+  "no_javascript_source_check": {
+    "heading": "Innovation\nfor life.",
+    "navigation_visible": true,
+    "search_hidden": true,
+    "card_count": 6
+  }
+}

@@ -1,0 +1,308 @@
+[
+  {
+    "slug": "endoscopy",
+    "name": "Endoscopy",
+    "num": "01",
+    "icon": "endoscopy",
+    "brief": "Single-use flexible ureteroscopes and cystoscopes.",
+    "subtitle": "Single-use flexible endoscopy for urology.",
+    "lead": "We are building an endoscopy segment around single-use flexible ureteroscopes and cystoscopes. Our focus is a practical viewing and instrument platform, considered alongside its display system, controls and accessories.",
+    "meta": "TORSH’s planned single-use flexible ureteroscope and cystoscope segment. Explore the scope, device interfaces and information planned for future listings.",
+    "scope_heading": "Two categories. Clearly identified configurations.",
+    "scope": [
+      {
+        "title": "Flexible ureteroscopes",
+        "text": "A planned flexible ureteroscopy category, with attention to shaft profile, tip articulation and working-channel requirements."
+      },
+      {
+        "title": "Flexible cystoscopes",
+        "text": "A planned single-use flexible cystoscopy category, considered with its viewing system, controls and accessory requirements."
+      }
+    ],
+    "focus_heading": "The whole setup matters.",
+    "focus_intro": "We look at imaging, manoeuvrability and instrument compatibility together. The scope is one part of the setup, not a standalone collection of specifications.",
+    "considerations": [
+      {
+        "title": "Imaging & display",
+        "text": "Our focus includes the imaging system, illumination and connection to the display, so the full equipment requirement is clear."
+      },
+      {
+        "title": "Scope handling",
+        "text": "Shaft profile, working length, tip deflection and control layout are central to how we consider a scope’s practical design."
+      },
+      {
+        "title": "Instrument interface",
+        "text": "Working-channel dimensions and documented accessory compatibility are part of our portfolio considerations from the outset."
+      }
+    ],
+    "details": [
+      "Exact scope model and manufacturer",
+      "Shaft, working-length and working-channel dimensions",
+      "Imaging system and display compatibility",
+      "Deflection, controls and supplied components",
+      "Product documentation and availability"
+    ],
+    "related": [
+      "access-and-suction",
+      "guidewires"
+    ]
+  },
+  {
+    "slug": "access-and-suction",
+    "name": "Access & suction",
+    "num": "02",
+    "icon": "access-and-suction",
+    "brief": "Ureteral access sheaths and suction-enabled configurations.",
+    "subtitle": "Ureteral access and suction in a connected setup.",
+    "lead": "Our planned access segment covers conventional ureteral access sheaths and suction-enabled designs. We consider the access pathway and the connected suction equipment together, with attention to dimensions, interfaces and device-specific requirements.",
+    "meta": "Explore TORSH’s planned ureteral access sheath and suction-enabled access segment. Model-specific dimensions, connections and documentation will follow.",
+    "scope_heading": "Access and suction are distinct design considerations.",
+    "scope": [
+      {
+        "title": "Ureteral access sheaths",
+        "text": "Conventional access-sheath configurations, including the sheath, dilator and any other supplied components."
+      },
+      {
+        "title": "Suction-enabled access sheaths",
+        "text": "Sheath configurations with an integrated suction connection, considered alongside their tubing and equipment interfaces."
+      }
+    ],
+    "focus_heading": "Look beyond the presence of a suction port.",
+    "focus_intro": "The priorities are the access pathway, the instrument pairing and the connected equipment. A suction-enabled design needs to be understood as a configuration, not simply as a sheath with an extra port.",
+    "considerations": [
+      {
+        "title": "Dimensions & instrument pairing",
+        "text": "Our scope includes inner and outer dimensions, working length and compatibility with the intended endoscopic setup."
+      },
+      {
+        "title": "Connections & configuration",
+        "text": "Connector design, required tubing and compatible suction equipment are part of the product configuration we aim to make explicit."
+      },
+      {
+        "title": "Defined use conditions",
+        "text": "We distinguish documented operating limits and model-specific performance information from assumptions about suction-enabled devices as a category."
+      }
+    ],
+    "details": [
+      "Sheath and dilator configuration",
+      "Inner and outer dimensions and working length",
+      "Scope and accessory compatibility",
+      "Suction connections and equipment requirements",
+      "Model-specific use information and availability"
+    ],
+    "related": [
+      "endoscopy",
+      "stone-retrieval"
+    ]
+  },
+  {
+    "slug": "stone-retrieval",
+    "name": "Stone retrieval",
+    "num": "03",
+    "icon": "stone-retrieval",
+    "brief": "Nitinol baskets and related stone-retrieval accessories.",
+    "subtitle": "Nitinol baskets for stone-fragment retrieval.",
+    "lead": "Our planned stone-retrieval segment focuses on nitinol baskets and related accessories. We consider the basket, its shaft and its handle as one retrieval device, with attention to the instrument pathway it must work within.",
+    "meta": "TORSH’s planned nitinol stone-retrieval basket segment. Explore the intended scope and the basket, shaft and compatibility information planned for future listings.",
+    "scope_heading": "The basket and its instrument pathway.",
+    "scope": [
+      {
+        "title": "Nitinol stone-retrieval baskets",
+        "text": "Basket devices for the planned endourology portfolio, with model-level distinctions in geometry, wire arrangement and tip design."
+      },
+      {
+        "title": "Related retrieval accessories",
+        "text": "Accessories considered alongside the basket and its intended instrument pairing, rather than treated as interchangeable additions."
+      }
+    ],
+    "focus_heading": "From basket geometry to handle control.",
+    "focus_intro": "The priorities are the basket’s opening configuration, its operation through the handle and its fit within the intended instrument pathway.",
+    "considerations": [
+      {
+        "title": "Basket geometry",
+        "text": "Opening dimensions, wire arrangement and tip configuration are the starting points for distinguishing basket designs."
+      },
+      {
+        "title": "Shaft & handle",
+        "text": "Our focus extends to shaft size, working length and the mechanism used to open and close the basket."
+      },
+      {
+        "title": "Instrument compatibility",
+        "text": "Documented working-channel requirements and compatibility limits are considered with the basket specification, not separately from it."
+      }
+    ],
+    "details": [
+      "Basket design, tip configuration and opening dimensions",
+      "Shaft size and working length",
+      "Handle configuration",
+      "Documented instrument compatibility",
+      "Supplied accessories and product documentation"
+    ],
+    "related": [
+      "endoscopy",
+      "biomaterial-innovation"
+    ]
+  },
+  {
+    "slug": "guidewires",
+    "name": "Guidewires",
+    "num": "04",
+    "icon": "guidewires",
+    "brief": "Guidewires for the planned endourology portfolio.",
+    "subtitle": "A focused guidewire segment for endourology.",
+    "lead": "Our planned guidewire segment brings attention to the tip, shaft and surface as well as overall dimensions. The aim is a clearly differentiated set of options, rather than a category described by diameter and length alone.",
+    "meta": "Explore TORSH’s planned endourology guidewire segment, including the tip, shaft, coating and dimensional information intended for future product listings.",
+    "scope_heading": "A model-specific guidewire category.",
+    "scope": [
+      {
+        "title": "Endourology guidewires",
+        "text": "Guidewires for the planned endourology portfolio, with tip configuration, core construction and coating treated as model-specific characteristics."
+      }
+    ],
+    "focus_heading": "Tip, shaft and surface. Considered together.",
+    "focus_intro": "Our portfolio work focuses on the characteristics that distinguish one wire from another. Matching dimensions alone are not the basis for how we intend to describe or compare models.",
+    "considerations": [
+      {
+        "title": "Tip configuration",
+        "text": "We consider the tip shape and flexible segment separately from the shaft, keeping the specific design of each model visible."
+      },
+      {
+        "title": "Shaft construction",
+        "text": "The core material, shaft characteristics and working dimensions are part of the same product description."
+      },
+      {
+        "title": "Surface & preparation",
+        "text": "Coating type, its coverage and any documented preparation requirements are included in our product-information priorities."
+      }
+    ],
+    "details": [
+      "Diameter and overall length",
+      "Core and shaft construction",
+      "Tip shape and flexible-segment information",
+      "Coating coverage and preparation requirements",
+      "Product-specific documentation and availability"
+    ],
+    "related": [
+      "access-and-suction",
+      "ureteral-stents"
+    ]
+  },
+  {
+    "slug": "ureteral-stents",
+    "name": "Ureteral stents",
+    "num": "05",
+    "icon": "ureteral-stents",
+    "brief": "Double-J ureteral stents and associated accessories.",
+    "subtitle": "Double-J ureteral stents and associated accessories.",
+    "lead": "Our planned ureteral-stent segment centres on double-J stents. We are shaping this category around clear distinctions in material, dimensions and supplied configuration, supported by product-specific use information.",
+    "meta": "TORSH’s planned double-J ureteral stent segment. Material, dimensions, accessories and manufacturer-specific use information will be provided at model level.",
+    "scope_heading": "Stents and their supplied configuration.",
+    "scope": [
+      {
+        "title": "Double-J ureteral stents",
+        "text": "Double-J stents within the planned urology portfolio, with materials, dimensions and design options to be identified at model level."
+      },
+      {
+        "title": "Associated accessories",
+        "text": "Any placement or retrieval accessories supplied with a particular configuration, clearly distinguished from the stent itself."
+      }
+    ],
+    "focus_heading": "Material, dimensions and the complete set.",
+    "focus_intro": "Our focus is a stent category in which the exact product and its supplied components are easy to identify. Use limits belong to the model and its documentation, not to a generic category description.",
+    "considerations": [
+      {
+        "title": "Material & design",
+        "text": "Material, coil configuration and markings are considered as model-specific design characteristics, without assuming the same properties across all stents."
+      },
+      {
+        "title": "Dimensions & components",
+        "text": "Diameter, length, size options and the contents of the supplied set are central to our planned product information."
+      },
+      {
+        "title": "Product-specific information",
+        "text": "Manufacturer-defined dwell-time limits, removal information and accessory requirements need to stay linked to the exact model."
+      }
+    ],
+    "details": [
+      "Stent material and model identification",
+      "Diameter, length and available size options",
+      "Coil configuration and markings",
+      "Included accessories and supplied components",
+      "Manufacturer’s use information and availability"
+    ],
+    "related": [
+      "guidewires",
+      "endoscopy"
+    ]
+  },
+  {
+    "slug": "biomaterial-innovation",
+    "name": "Biomaterial innovation",
+    "num": "06",
+    "icon": "biomaterial-innovation",
+    "research": true,
+    "brief": "Investigational hydrogel-assisted stone-fragment retrieval.",
+    "subtitle": "A hydrogel approach to residual stone-fragment retrieval.",
+    "lead": "We are developing an in-situ forming hydrogel intended to capture residual kidney-stone fragments and dust in a cohesive gel for basket-assisted endoscopic retrieval.",
+    "meta": "TORSH’s investigational in-situ forming hydrogel programme for residual kidney-stone fragment retrieval. Explore the proposed concept and development questions.",
+    "question": {
+      "eyebrow": "The development question",
+      "heading": "Can small fragments become\none retrievable collection?",
+      "paragraphs": [
+        "That question guides our lead biomaterials programme. Instead of considering the fragment alone, the concept introduces a material intended to surround and hold residual stone fragments and dust.",
+        "The design objective is controlled delivery, formation of a cohesive gel around the material, and removal with endoscopic retrieval instruments. These are intended functions, not established clinical results."
+      ]
+    },
+    "workflow_heading": "The proposed workflow",
+    "workflow_intro": "A concept sequence—not instructions for clinical use. Delivery conditions and device compatibility remain part of development.",
+    "workflow": [
+      {
+        "icon": "delivery",
+        "title": "Deliver",
+        "text": "Introduce the components at the intended site through an endoscopic delivery pathway."
+      },
+      {
+        "icon": "gel-capture",
+        "title": "Form & capture",
+        "text": "Form a gel in situ, with the aim of incorporating residual fragments and dust into a cohesive collection."
+      },
+      {
+        "icon": "stone-retrieval",
+        "title": "Retrieve",
+        "text": "Engage the gel with a retrieval basket and remove the captured material through the intended retrieval pathway."
+      }
+    ],
+    "questions_heading": "What the programme needs to establish",
+    "questions_intro": "The programme brings materials questions and procedural questions into the same development plan.",
+    "questions": [
+      {
+        "icon": "delivery",
+        "title": "Delivery & formation",
+        "text": "Can the components be delivered controllably, and can gel formation be managed under the intended procedural conditions?"
+      },
+      {
+        "icon": "gel-capture",
+        "title": "Capture & integrity",
+        "text": "Does the gel incorporate fragments and dust, remain cohesive during handling, and permit retrieval without unwanted breakup?"
+      },
+      {
+        "icon": "precision",
+        "title": "Instrument compatibility",
+        "text": "How does the concept interact with the delivery channel, basket and retrieval pathway? Compatibility needs to be evaluated as a system."
+      },
+      {
+        "icon": "evidence",
+        "title": "Safety & translation",
+        "text": "What biological-safety, sterilisation, stability, manufacturing and clinical evidence is required before the technology can be introduced?"
+      }
+    ],
+    "stage_heading": "Current stage: development and testing",
+    "stage_text": "The programme is undergoing further development and testing. Safety, clinical effectiveness and compatibility with specific instruments remain to be established. The technology is not offered for clinical use.",
+    "collaboration_heading": "Relevant expertise matters.",
+    "collaboration_text": "We are interested in clinical input on retrieval workflows, biomaterials and testing expertise, and manufacturing perspectives relevant to further development.",
+    "related": [
+      "stone-retrieval",
+      "endoscopy"
+    ]
+  }
+]
