@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+*.tar.gz
+.openai/
+.sites-checkout/
+.sites-checkout-*/
+.sites-runtime/
+node_modules/
+__pycache__/
+*.py[cod]
+
+
