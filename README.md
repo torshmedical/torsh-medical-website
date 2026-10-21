@@ -1,10 +1,10 @@
-# TORSH Medical Technologies Website v4.0
+# TORSH Medical Technologies Website v5.0
 
-This is a static, responsive TORSH website built around the Graphite + Electric Blue identity. It includes seven urology product-family pages, three procedure-led solution pages and a six-article Insights library.
+This is a static, responsive TORSH website built around the Graphite + Electric Blue identity. It includes seven urology product-family pages, three procedure-led solution pages, a six-article Insights library, a business-enquiry form, protected request management and a focused business webmail portal.
 
 ## Open the site
 
-Open `index.html` in a browser or serve the folder with any static web server. The site has no framework or runtime dependency.
+Open `index.html` in a browser or serve the folder with any static web server. Public content has no framework dependency. Form submission, admin management and webmail use the narrow Cloudflare Worker/D1/KV service in `cloudflare/contact-worker/`; secrets never belong in the static site.
 
 ## Edit design in one place
 
@@ -28,6 +28,13 @@ After editing the content source, rebuild with the bundled or local Python runti
 python tools/build_site.py
 python tools/sync_icons.py
 python tools/check_site.py
+python tools/build_dist.py
+```
+
+Optional full Chromium QA (requires Playwright):
+
+```sh
+node tools/browser_qa.cjs
 ```
 
 `tools/refresh_from_brief.py` can re-import the supplied DOCX brief when required. It is a controlled content migration utility, not a normal build step.
@@ -42,6 +49,8 @@ python tools/check_site.py
 - Insights hub
 - Six educational insight articles
 - Contact
+- Restricted enquiry administration
+- Restricted TORSH Mail for the four approved company addresses
 - Privacy and website information
 - Accessible search and custom 404 page
 
@@ -53,8 +62,9 @@ The investigational innovation page remains outside public navigation because th
 - The site does not claim inventory, manufacturing role, certifications, approvals, sterile status or clinical superiority.
 - Specifications and availability must be verified for each model before publication.
 - Insights are marked for clinical editorial review and link to the current EAU Urolithiasis guideline.
-- Contact configuration remains inactive until a verified public inbox is added to `assets/js/site-config.js`.
-- The enquiry experience does not fake submission or store data.
+- The public contact details are `info@torshmedical.com` and `8800133070`.
+- Enquiries are accepted only after the Cloudflare Worker, D1 database and Access policy are deployed. The browser contains no Brevo or Cloudflare credentials.
+- `admin.html`, `mail.html`, `/api/admin/*` and `/api/mail/*` must be protected by Cloudflare Access before production use.
 
 ## Brand assets
 
@@ -62,6 +72,8 @@ The supplied palette, typography and wordmark iteration boards are retained unde
 
 ## Deployment
 
-The generated public website is in `dist/`. Configure the personal Git host to publish that directory, while keeping the editable source, content files and build tools in the repository.
+The generated public website is in `dist/`. GitHub Pages publishes that directory. Cloudflare continues to provide DNS/HTTPS and handles `/api/*`, inbound mail, encrypted transport, message storage and Access protection for the restricted paths. Existing Brevo transactional email handles outbound messages so Cloudflare's paid sending plan is not required.
+
+The site remains static HTML by design: its content and SEO needs do not justify React. The mail interface is progressively enhanced JavaScript, while all visual rules—including the portal—remain centralized in `assets/css/master.css`.
 
 This repository intentionally contains no ChatGPT Sites project identity or hosting configuration. Exclude `style-guide.html`, `content/`, `docs/`, `tools/`, the brand reference boards and this README from the public deployment unless internal references are intentionally required.

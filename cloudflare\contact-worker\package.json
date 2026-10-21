@@ -1,0 +1,17 @@
+{
+  "name": "torsh-contact-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "wrangler deploy --dry-run",
+    "deploy": "wrangler deploy",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "postal-mime": "4.0.7"
+  },
+  "devDependencies": {
+    "wrangler": "4.151.1"
+  }
+}

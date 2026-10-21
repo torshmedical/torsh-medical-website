@@ -1,0 +1,5 @@
+RATE_LIMIT_SALT=replace-with-a-long-random-secret
+BREVO_API_KEY=replace-with-a-brevo-transactional-api-key
+CONTACT_RECIPIENT=verified-destination@example.com
+BREVO_SENDER_EMAIL=verified-sender@torshmedical.com
+MAIL_FORWARD_ADDRESS=verified-backup-inbox@example.com

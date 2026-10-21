@@ -1,0 +1,1873 @@
+{
+  "method": "Chromium against a local HTTP server with mocked same-origin contact, admin and mail API responses.",
+  "widths": [
+    320,
+    390,
+    620,
+    768,
+    1024,
+    1440,
+    1920
+  ],
+  "pages": [
+    "404.html",
+    "about.html",
+    "admin.html",
+    "contact.html",
+    "index.html",
+    "insights/guidewires-and-double-j-stents-selection-details.html",
+    "insights/how-stone-retrieval-baskets-fit-endourology-workflows.html",
+    "insights/how-to-evaluate-single-use-flexible-ureteroscopes.html",
+    "insights/index.html",
+    "insights/residual-stone-fragments-after-rirs-engineering-question.html",
+    "insights/standard-versus-suction-ureteral-access-sheaths.html",
+    "insights/understanding-the-device-ecosystem-in-flexible-ureteroscopy.html",
+    "mail.html",
+    "privacy.html",
+    "products/double-j-ureteral-stents.html",
+    "products/index.html",
+    "products/single-use-flexible-cystoscopes.html",
+    "products/single-use-flexible-ureteroscopes.html",
+    "products/stone-retrieval-baskets.html",
+    "products/suction-ureteral-access-sheaths.html",
+    "products/ureteral-access-sheaths.html",
+    "products/urology-guidewires.html",
+    "solutions/cystoscopy.html",
+    "solutions/flexible-ureteroscopy.html",
+    "solutions/stone-management-workflow.html",
+    "style-guide.html"
+  ],
+  "layouts": [
+    {
+      "page": "404.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "about.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "admin.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "contact.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "index.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/guidewires-and-double-j-stents-selection-details.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/how-stone-retrieval-baskets-fit-endourology-workflows.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/how-to-evaluate-single-use-flexible-ureteroscopes.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/index.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/residual-stone-fragments-after-rirs-engineering-question.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/standard-versus-suction-ureteral-access-sheaths.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/understanding-the-device-ecosystem-in-flexible-ureteroscopy.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "mail.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "privacy.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/double-j-ureteral-stents.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/index.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/single-use-flexible-cystoscopes.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/single-use-flexible-ureteroscopes.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/stone-retrieval-baskets.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/suction-ureteral-access-sheaths.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/ureteral-access-sheaths.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/urology-guidewires.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/cystoscopy.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/flexible-ureteroscopy.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/stone-management-workflow.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "style-guide.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "404.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "about.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "admin.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "contact.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "index.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/guidewires-and-double-j-stents-selection-details.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/how-stone-retrieval-baskets-fit-endourology-workflows.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/how-to-evaluate-single-use-flexible-ureteroscopes.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/index.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/residual-stone-fragments-after-rirs-engineering-question.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/standard-versus-suction-ureteral-access-sheaths.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/understanding-the-device-ecosystem-in-flexible-ureteroscopy.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "mail.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "privacy.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/double-j-ureteral-stents.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/index.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/single-use-flexible-cystoscopes.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/single-use-flexible-ureteroscopes.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/stone-retrieval-baskets.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/suction-ureteral-access-sheaths.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/ureteral-access-sheaths.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/urology-guidewires.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/cystoscopy.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/flexible-ureteroscopy.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/stone-management-workflow.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "style-guide.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "404.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "about.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "admin.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "contact.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "index.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/guidewires-and-double-j-stents-selection-details.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/how-stone-retrieval-baskets-fit-endourology-workflows.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/how-to-evaluate-single-use-flexible-ureteroscopes.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/index.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/residual-stone-fragments-after-rirs-engineering-question.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/standard-versus-suction-ureteral-access-sheaths.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/understanding-the-device-ecosystem-in-flexible-ureteroscopy.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "mail.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "privacy.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/double-j-ureteral-stents.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/index.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/single-use-flexible-cystoscopes.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/single-use-flexible-ureteroscopes.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/stone-retrieval-baskets.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/suction-ureteral-access-sheaths.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/ureteral-access-sheaths.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/urology-guidewires.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/cystoscopy.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/flexible-ureteroscopy.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/stone-management-workflow.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "style-guide.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "404.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "about.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "admin.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "contact.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "index.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/guidewires-and-double-j-stents-selection-details.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/how-stone-retrieval-baskets-fit-endourology-workflows.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/how-to-evaluate-single-use-flexible-ureteroscopes.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/index.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/residual-stone-fragments-after-rirs-engineering-question.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/standard-versus-suction-ureteral-access-sheaths.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/understanding-the-device-ecosystem-in-flexible-ureteroscopy.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "mail.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "privacy.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/double-j-ureteral-stents.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/index.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/single-use-flexible-cystoscopes.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/single-use-flexible-ureteroscopes.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/stone-retrieval-baskets.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/suction-ureteral-access-sheaths.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/ureteral-access-sheaths.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/urology-guidewires.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/cystoscopy.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/flexible-ureteroscopy.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/stone-management-workflow.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "style-guide.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "404.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "about.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "admin.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "contact.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "index.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/guidewires-and-double-j-stents-selection-details.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/how-stone-retrieval-baskets-fit-endourology-workflows.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/how-to-evaluate-single-use-flexible-ureteroscopes.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/index.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/residual-stone-fragments-after-rirs-engineering-question.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/standard-versus-suction-ureteral-access-sheaths.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/understanding-the-device-ecosystem-in-flexible-ureteroscopy.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "mail.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "privacy.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/double-j-ureteral-stents.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/index.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/single-use-flexible-cystoscopes.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/single-use-flexible-ureteroscopes.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/stone-retrieval-baskets.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/suction-ureteral-access-sheaths.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/ureteral-access-sheaths.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/urology-guidewires.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/cystoscopy.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/flexible-ureteroscopy.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/stone-management-workflow.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "style-guide.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "404.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "about.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "admin.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "contact.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "index.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/guidewires-and-double-j-stents-selection-details.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/how-stone-retrieval-baskets-fit-endourology-workflows.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/how-to-evaluate-single-use-flexible-ureteroscopes.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/index.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/residual-stone-fragments-after-rirs-engineering-question.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/standard-versus-suction-ureteral-access-sheaths.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/understanding-the-device-ecosystem-in-flexible-ureteroscopy.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "mail.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "privacy.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/double-j-ureteral-stents.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/index.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/single-use-flexible-cystoscopes.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/single-use-flexible-ureteroscopes.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/stone-retrieval-baskets.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/suction-ureteral-access-sheaths.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/ureteral-access-sheaths.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/urology-guidewires.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/cystoscopy.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/flexible-ureteroscopy.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/stone-management-workflow.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "style-guide.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "404.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "about.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "admin.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "contact.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "index.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/guidewires-and-double-j-stents-selection-details.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/how-stone-retrieval-baskets-fit-endourology-workflows.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/how-to-evaluate-single-use-flexible-ureteroscopes.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/index.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/residual-stone-fragments-after-rirs-engineering-question.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/standard-versus-suction-ureteral-access-sheaths.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "insights/understanding-the-device-ecosystem-in-flexible-ureteroscopy.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "mail.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "privacy.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/double-j-ureteral-stents.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/index.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/single-use-flexible-cystoscopes.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/single-use-flexible-ureteroscopes.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/stone-retrieval-baskets.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/suction-ureteral-access-sheaths.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/ureteral-access-sheaths.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "products/urology-guidewires.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/cystoscopy.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/flexible-ureteroscopy.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "solutions/stone-management-workflow.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "style-guide.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    }
+  ],
+  "interactions": {
+    "search_filter_and_escape": "pass",
+    "mobile_menu_and_escape": "pass",
+    "contact_prefill_validation_and_mock_submission": "pass",
+    "admin_load_and_mock_status_update": "pass",
+    "mail_load_read_and_mock_send": "pass"
+  },
+  "issues": [],
+  "runtime_errors": [],
+  "layout_count": 182,
+  "result": "PASS"
+}
