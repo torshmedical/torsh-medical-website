@@ -26,6 +26,9 @@
   // code without permission to rewrite account-wide email routing rules.
   "vars": {
     "ADMIN_EMAILS": "victor@torshmedical.com,krishna@torshmedical.com,admin@torshmedical.com,info@torshmedical.com",
-    "MAILBOX_EMAILS": "victor@torshmedical.com,krishna@torshmedical.com,admin@torshmedical.com,info@torshmedical.com"
+    "BREVO_SENDER_EMAIL": "info@torshmedical.com",
+    "CONTACT_RECIPIENT": "info@torshmedical.com",
+    "MAILBOX_EMAILS": "victor@torshmedical.com,krishna@torshmedical.com,admin@torshmedical.com,info@torshmedical.com",
+    "MAIL_FORWARD_ADDRESS": "torshmedical@gmail.com"
   }
 }
