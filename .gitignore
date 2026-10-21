@@ -6,6 +6,7 @@ Thumbs.db
 .sites-checkout-*/
 .sites-runtime/
 node_modules/
+worker-bundle.js
 __pycache__/
 *.py[cod]
 
