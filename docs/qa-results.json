@@ -22,6 +22,7 @@
     "insights/residual-stone-fragments-after-rirs-engineering-question.html",
     "insights/standard-versus-suction-ureteral-access-sheaths.html",
     "insights/understanding-the-device-ecosystem-in-flexible-ureteroscopy.html",
+    "login.html",
     "mail.html",
     "privacy.html",
     "products/double-j-ureteral-stents.html",
@@ -159,6 +160,16 @@
       "overflow": []
     },
     {
+      "page": "login.html",
+      "viewport": 320,
+      "width": 320,
+      "scroll": 320,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
       "page": "mail.html",
       "viewport": 320,
       "width": 320,
@@ -419,6 +430,16 @@
       "overflow": []
     },
     {
+      "page": "login.html",
+      "viewport": 390,
+      "width": 390,
+      "scroll": 390,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
       "page": "mail.html",
       "viewport": 390,
       "width": 390,
@@ -679,6 +700,16 @@
       "overflow": []
     },
     {
+      "page": "login.html",
+      "viewport": 620,
+      "width": 620,
+      "scroll": 620,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
       "page": "mail.html",
       "viewport": 620,
       "width": 620,
@@ -939,6 +970,16 @@
       "overflow": []
     },
     {
+      "page": "login.html",
+      "viewport": 768,
+      "width": 768,
+      "scroll": 768,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
       "page": "mail.html",
       "viewport": 768,
       "width": 768,
@@ -1199,6 +1240,16 @@
       "overflow": []
     },
     {
+      "page": "login.html",
+      "viewport": 1024,
+      "width": 1024,
+      "scroll": 1024,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
       "page": "mail.html",
       "viewport": 1024,
       "width": 1024,
@@ -1459,6 +1510,16 @@
       "overflow": []
     },
     {
+      "page": "login.html",
+      "viewport": 1440,
+      "width": 1440,
+      "scroll": 1440,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
       "page": "mail.html",
       "viewport": 1440,
       "width": 1440,
@@ -1710,6 +1771,16 @@
     },
     {
       "page": "insights/understanding-the-device-ecosystem-in-flexible-ureteroscopy.html",
+      "viewport": 1920,
+      "width": 1920,
+      "scroll": 1920,
+      "h1": 1,
+      "missingImages": 0,
+      "emptyIcons": 0,
+      "overflow": []
+    },
+    {
+      "page": "login.html",
       "viewport": 1920,
       "width": 1920,
       "scroll": 1920,
@@ -1868,6 +1939,6 @@
   },
   "issues": [],
   "runtime_errors": [],
-  "layout_count": 182,
+  "layout_count": 189,
   "result": "PASS"
 }

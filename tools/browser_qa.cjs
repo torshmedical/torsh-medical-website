@@ -41,6 +41,7 @@ function server() {
       return sendJson(response, { items: [{ id: "11111111-1111-4111-8111-111111111111", reference: "TMT-QA-000001", created_at: "2026-10-21T05:30:00.000Z", status: "new", category: "product", category_label: "Product or technical requirement", name: "QA Visitor", organisation: "QA Hospital", email: "qa@example.invalid", phone: "", interest: "Flexible ureteroscope", message: "This is a safe browser-QA enquiry record." }] });
     }
     if (/^\/api\/admin\/enquiries\/[0-9a-f-]{36}$/i.test(url.pathname) && request.method === "PATCH") return sendJson(response, { ok: true });
+    if (url.pathname === "/api/auth/profile" && request.method === "GET") return sendJson(response, { email: "" });
     if (url.pathname === "/api/mail/profile" && request.method === "GET") {
       return sendJson(response, { email: "victor@torshmedical.com", mailbox: "victor@torshmedical.com" });
     }
@@ -170,12 +171,16 @@ function server() {
   await page.screenshot({ path: path.join(PREVIEWS, "homepage-desktop.png"), fullPage: true });
   await page.goto(`${origin}/contact.html`, { waitUntil: "load" });
   await page.screenshot({ path: path.join(PREVIEWS, "contact-desktop.png"), fullPage: true });
+  await page.goto(`${origin}/login.html`, { waitUntil: "load" });
+  await page.screenshot({ path: path.join(PREVIEWS, "login-desktop.png"), fullPage: true });
   await page.goto(`${origin}/mail.html`, { waitUntil: "load" });
   await page.locator(".mail-row").waitFor();
   await page.screenshot({ path: path.join(PREVIEWS, "mail-desktop.png"), fullPage: true });
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(`${origin}/contact.html`, { waitUntil: "load" });
   await page.screenshot({ path: path.join(PREVIEWS, "contact-mobile.png"), fullPage: true });
+  await page.goto(`${origin}/login.html`, { waitUntil: "load" });
+  await page.screenshot({ path: path.join(PREVIEWS, "login-mobile.png"), fullPage: true });
   await page.goto(`${origin}/mail.html`, { waitUntil: "load" });
   await page.locator(".mail-row").waitFor();
   await page.locator("[data-mail-menu]").click();

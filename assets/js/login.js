@@ -87,6 +87,7 @@
   codeInput.addEventListener("input", () => { codeInput.value = codeInput.value.replace(/\D/g, "").slice(0, 6); });
 
   fetch(`${endpoint}/profile`, { credentials: "same-origin", headers: { Accept: "application/json" } })
-    .then(response => { if (response.ok) location.replace(nextPage()); })
+    .then(response => response.ok ? response.json() : null)
+    .then(profile => { if (profile?.email) location.replace(nextPage()); })
     .catch(() => {});
 })();
