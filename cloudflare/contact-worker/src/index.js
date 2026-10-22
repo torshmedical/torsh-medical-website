@@ -20,6 +20,10 @@ const FOLDERS = new Set(["inbox", "starred", "sent", "trash"]);
 const EMAIL_PATTERN = /^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/;
 const MAX_ATTACHMENT_BYTES = 4 * 1024 * 1024;
 const MAX_INBOUND_BYTES = 25 * 1024 * 1024;
+const OTP_TTL_SECONDS = 10 * 60;
+const OTP_RESEND_SECONDS = 60;
+const SESSION_TTL_SECONDS = 12 * 60 * 60;
+const SESSION_COOKIE = "torsh_session";
 
 function json(data, status = 200, origin = "") {
   const headers = { "Content-Type": "application/json; charset=utf-8", "Cache-Control": "no-store" };
@@ -39,15 +43,166 @@ function configuredMailboxes(env) {
   return configured.length ? configured : [...DEFAULT_MAILBOXES];
 }
 
-function accessIdentity(request, env) {
+function accessHeaderIdentity(request, env) {
   const email = clean(request.headers.get("Cf-Access-Authenticated-User-Email"), 160).toLowerCase();
   return configuredMailboxes(env).includes(email) ? email : "";
 }
 
-function authorisedAdmin(request, env) {
-  const email = clean(request.headers.get("Cf-Access-Authenticated-User-Email"), 160).toLowerCase();
+function cookieValue(request, name) {
+  const source = request.headers.get("Cookie") || "";
+  for (const part of source.split(";")) {
+    const [key, ...value] = part.trim().split("=");
+    if (key === name) return decodeURIComponent(value.join("="));
+  }
+  return "";
+}
+
+async function accessIdentity(request, env) {
+  const accessEmail = accessHeaderIdentity(request, env);
+  if (accessEmail) return accessEmail;
+  const token = cookieValue(request, SESSION_COOKIE);
+  if (!env.MAIL_STORE || !/^[A-Za-z0-9_-]{32,128}$/.test(token)) return "";
+  const session = await env.MAIL_STORE.get(`auth:session:${token}`, "json");
+  const email = clean(session?.email, 160).toLowerCase();
+  return configuredMailboxes(env).includes(email) ? email : "";
+}
+
+async function authorisedAdmin(request, env) {
+  const email = await accessIdentity(request, env);
   const allowed = String(env.ADMIN_EMAILS || "").split(",").map(value => value.trim().toLowerCase()).filter(Boolean);
   return Boolean(email && allowed.includes(email));
+}
+
+function bytesToHex(bytes) {
+  return [...bytes].map(byte => byte.toString(16).padStart(2, "0")).join("");
+}
+
+async function sha256(value) {
+  const bytes = new TextEncoder().encode(value);
+  return bytesToHex(new Uint8Array(await crypto.subtle.digest("SHA-256", bytes)));
+}
+
+async function otpKey(email) {
+  return `auth:otp:${await sha256(email)}`;
+}
+
+async function otpThrottleKey(request, email, env) {
+  return `auth:otp-limit:${await ipKey(request, env.RATE_LIMIT_SALT)}:${await sha256(email)}`;
+}
+
+function randomCode() {
+  const value = new Uint32Array(1);
+  crypto.getRandomValues(value);
+  return String(value[0] % 1000000).padStart(6, "0");
+}
+
+function randomToken() {
+  const bytes = new Uint8Array(32);
+  crypto.getRandomValues(bytes);
+  let binary = "";
+  for (const byte of bytes) binary += String.fromCharCode(byte);
+  return btoa(binary).replaceAll("+", "-").replaceAll("/", "_").replace(/=+$/g, "");
+}
+
+function sameOriginRequest(request) {
+  const origin = request.headers.get("Origin") || "";
+  return PUBLIC_ORIGINS.has(origin) && origin === new URL(request.url).origin;
+}
+
+function sessionCookie(token, maxAge = SESSION_TTL_SECONDS) {
+  return `${SESSION_COOKIE}=${encodeURIComponent(token)}; Path=/; Max-Age=${maxAge}; HttpOnly; Secure; SameSite=Lax`;
+}
+
+async function sendLoginCode(env, email, code) {
+  if (!env.BREVO_API_KEY || !env.BREVO_SENDER_EMAIL) throw new Error("Email delivery is not configured.");
+  const response = await fetch("https://api.brevo.com/v3/smtp/email", {
+    method: "POST",
+    headers: { Accept: "application/json", "Content-Type": "application/json", "api-key": env.BREVO_API_KEY },
+    body: JSON.stringify({
+      sender: { name: "TORSH Secure Access", email: env.BREVO_SENDER_EMAIL },
+      to: [{ email }],
+      subject: `${code} is your TORSH sign-in code`,
+      textContent: [
+        "TORSH secure portal sign-in",
+        "",
+        `Your one-time code is: ${code}`,
+        "",
+        "This code expires in 10 minutes and can be used once. If you did not request it, you can ignore this email."
+      ].join("\n")
+    })
+  });
+  if (!response.ok) throw new Error(`Brevo returned ${response.status}`);
+}
+
+async function requestLoginCode(request, env, origin) {
+  if (!sameOriginRequest(request)) return json({ error: "This sign-in request must start on the TORSH website." }, 403, origin);
+  if (!env.MAIL_STORE) return json({ error: "Secure sign-in is temporarily unavailable." }, 503, origin);
+  let input;
+  try { input = await request.json(); } catch { return json({ error: "Invalid request." }, 400, origin); }
+  const email = clean(input?.email, 160).toLowerCase();
+  if (!EMAIL_PATTERN.test(email)) return json({ error: "Enter a valid TORSH email address." }, 400, origin);
+  const generic = { ok: true, message: "If this is an approved TORSH account, a sign-in code is on its way." };
+  if (!configuredMailboxes(env).includes(email)) return json(generic, 200, origin);
+
+  const throttleKey = await otpThrottleKey(request, email, env);
+  if (await env.MAIL_STORE.get(throttleKey)) return json({ error: "A code was sent recently. Please wait one minute before requesting another." }, 429, origin);
+
+  const code = randomCode();
+  const digest = await sha256(`${env.RATE_LIMIT_SALT || "torsh-auth"}:${email}:${code}`);
+  try {
+    await sendLoginCode(env, email, code);
+  } catch (error) {
+    console.error("Login code delivery failed", error?.message || error);
+    return json({ error: "The sign-in code could not be delivered. Please try again shortly." }, 502, origin);
+  }
+  await env.MAIL_STORE.put(await otpKey(email), JSON.stringify({ digest, attempts: 0 }), { expirationTtl: OTP_TTL_SECONDS });
+  await env.MAIL_STORE.put(throttleKey, "1", { expirationTtl: OTP_RESEND_SECONDS });
+  return json(generic, 200, origin);
+}
+
+async function verifyLoginCode(request, env, origin) {
+  if (!sameOriginRequest(request)) return json({ error: "This sign-in request must start on the TORSH website." }, 403, origin);
+  if (!env.MAIL_STORE) return json({ error: "Secure sign-in is temporarily unavailable." }, 503, origin);
+  let input;
+  try { input = await request.json(); } catch { return json({ error: "Invalid request." }, 400, origin); }
+  const email = clean(input?.email, 160).toLowerCase();
+  const code = clean(input?.code, 12);
+  if (!configuredMailboxes(env).includes(email) || !/^\d{6}$/.test(code)) return json({ error: "The code is invalid or has expired." }, 400, origin);
+
+  const key = await otpKey(email);
+  const record = await env.MAIL_STORE.get(key, "json");
+  if (!record || Number(record.attempts || 0) >= 5) {
+    if (record) await env.MAIL_STORE.delete(key);
+    return json({ error: "The code is invalid or has expired." }, 400, origin);
+  }
+  const digest = await sha256(`${env.RATE_LIMIT_SALT || "torsh-auth"}:${email}:${code}`);
+  if (digest !== record.digest) {
+    const attempts = Number(record.attempts || 0) + 1;
+    if (attempts >= 5) await env.MAIL_STORE.delete(key);
+    else await env.MAIL_STORE.put(key, JSON.stringify({ ...record, attempts }), { expirationTtl: OTP_TTL_SECONDS });
+    return json({ error: "The code is invalid or has expired." }, 400, origin);
+  }
+
+  await env.MAIL_STORE.delete(key);
+  const token = randomToken();
+  await env.MAIL_STORE.put(`auth:session:${token}`, JSON.stringify({ email }), { expirationTtl: SESSION_TTL_SECONDS });
+  const response = json({ ok: true, email }, 200, origin);
+  response.headers.set("Set-Cookie", sessionCookie(token));
+  return response;
+}
+
+async function authProfile(request, env, origin) {
+  const email = await accessIdentity(request, env);
+  return email ? json({ email }, 200, origin) : json({ error: "Sign in is required." }, 403, origin);
+}
+
+async function logout(request, env, origin) {
+  if (!sameOriginRequest(request)) return json({ error: "This request must start on the TORSH website." }, 403, origin);
+  const token = cookieValue(request, SESSION_COOKIE);
+  if (env.MAIL_STORE && /^[A-Za-z0-9_-]{32,128}$/.test(token)) await env.MAIL_STORE.delete(`auth:session:${token}`);
+  const response = json({ ok: true }, 200, origin);
+  response.headers.set("Set-Cookie", sessionCookie("", 0));
+  return response;
 }
 
 function parseJson(value, fallback = []) {
@@ -223,7 +378,7 @@ async function createEnquiry(request, env, origin) {
 }
 
 async function listEnquiries(request, env) {
-  if (!authorisedAdmin(request, env)) return json({ error: "Not authorised." }, 403);
+  if (!await authorisedAdmin(request, env)) return json({ error: "Not authorised." }, 403);
   const status = new URL(request.url).searchParams.get("status") || "all";
   if (status !== "all" && !STATUSES.has(status)) return json({ error: "Invalid status filter." }, 400);
   const query = status === "all"
@@ -234,7 +389,7 @@ async function listEnquiries(request, env) {
 }
 
 async function updateEnquiry(request, env, id) {
-  if (!authorisedAdmin(request, env)) return json({ error: "Not authorised." }, 403);
+  if (!await authorisedAdmin(request, env)) return json({ error: "Not authorised." }, 403);
   let input;
   try { input = await request.json(); } catch { return json({ error: "Invalid request." }, 400); }
   if (!STATUSES.has(input.status)) return json({ error: "Invalid status." }, 400);
@@ -245,7 +400,7 @@ async function updateEnquiry(request, env, id) {
 }
 
 async function mailProfile(request, env) {
-  const mailbox = accessIdentity(request, env);
+  const mailbox = await accessIdentity(request, env);
   if (!mailbox) return json({ error: "Use an approved TORSH email address to sign in." }, 403);
   return json({ email: mailbox, mailbox });
 }
@@ -258,7 +413,7 @@ function listWhere(folder) {
 }
 
 async function listMail(request, env) {
-  const mailbox = accessIdentity(request, env);
+  const mailbox = await accessIdentity(request, env);
   if (!mailbox) return json({ error: "Not authorised." }, 403);
   const url = new URL(request.url);
   const folder = clean(url.searchParams.get("folder") || "inbox", 20).toLowerCase();
@@ -284,7 +439,7 @@ async function listMail(request, env) {
 }
 
 async function getMail(request, env, id) {
-  const mailbox = accessIdentity(request, env);
+  const mailbox = await accessIdentity(request, env);
   if (!mailbox) return json({ error: "Not authorised." }, 403);
   const row = await env.DB.prepare("SELECT * FROM mail_messages WHERE id = ? AND mailbox = ?").bind(id, mailbox).first();
   if (!row) return json({ error: "Message not found." }, 404);
@@ -294,7 +449,7 @@ async function getMail(request, env, id) {
 }
 
 async function updateMail(request, env, id) {
-  const mailbox = accessIdentity(request, env);
+  const mailbox = await accessIdentity(request, env);
   if (!mailbox) return json({ error: "Not authorised." }, 403);
   let input;
   try { input = await request.json(); } catch { return json({ error: "Invalid request." }, 400); }
@@ -314,7 +469,7 @@ async function updateMail(request, env, id) {
 }
 
 async function getAttachment(request, env, messageId, attachmentId) {
-  const mailbox = accessIdentity(request, env);
+  const mailbox = await accessIdentity(request, env);
   if (!mailbox) return json({ error: "Not authorised." }, 403);
   const row = await env.DB.prepare(`SELECT a.storage_key, a.filename, a.content_type
     FROM mail_attachments a JOIN mail_messages m ON m.id = a.message_id_fk
@@ -353,7 +508,7 @@ async function archiveOutbound(env, mailbox, input, sentId, attachments) {
 }
 
 async function sendMail(request, env) {
-  const mailbox = accessIdentity(request, env);
+  const mailbox = await accessIdentity(request, env);
   if (!mailbox) return json({ error: "Not authorised." }, 403);
   if ((Number(request.headers.get("Content-Length")) || 0) > 6 * 1024 * 1024) return json({ error: "The message is too large." }, 413);
   let raw;
@@ -524,6 +679,10 @@ export default {
       }});
     }
     if (url.pathname === "/api/enquiries" && request.method === "POST") return createEnquiry(request, env, origin);
+    if (url.pathname === "/api/auth/request-code" && request.method === "POST") return requestLoginCode(request, env, origin);
+    if (url.pathname === "/api/auth/verify-code" && request.method === "POST") return verifyLoginCode(request, env, origin);
+    if (url.pathname === "/api/auth/profile" && request.method === "GET") return authProfile(request, env, origin);
+    if (url.pathname === "/api/auth/logout" && request.method === "POST") return logout(request, env, origin);
     if (url.pathname === "/api/admin/enquiries" && request.method === "GET") return listEnquiries(request, env);
     const enquiryMatch = url.pathname.match(/^\/api\/admin\/enquiries\/([0-9a-f-]{36})$/i);
     if (enquiryMatch && request.method === "PATCH") return updateEnquiry(request, env, enquiryMatch[1]);

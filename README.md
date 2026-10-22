@@ -63,8 +63,8 @@ The investigational innovation page remains outside public navigation because th
 - Specifications and availability must be verified for each model before publication.
 - Insights are marked for clinical editorial review and link to the current EAU Urolithiasis guideline.
 - The public contact details are `info@torshmedical.com` and `8800133070`.
-- Enquiries are accepted only after the Cloudflare Worker, D1 database and Access policy are deployed. The browser contains no Brevo or Cloudflare credentials.
-- `admin.html`, `mail.html`, `/api/admin/*` and `/api/mail/*` must be protected by Cloudflare Access before production use.
+- Enquiries are accepted only after the Cloudflare Worker and D1 database are deployed. The browser contains no Brevo or Cloudflare credentials.
+- `admin.html`, `mail.html`, `/api/admin/*` and `/api/mail/*` use approved-address one-time codes, secure HTTP-only sessions and server-side authorization. Cloudflare Access remains compatible but is not required.
 
 ## Brand assets
 
@@ -72,7 +72,7 @@ The supplied palette, typography and wordmark iteration boards are retained unde
 
 ## Deployment
 
-The generated public website is in `dist/`. GitHub Pages publishes that directory. Cloudflare continues to provide DNS/HTTPS and handles `/api/*`, inbound mail, encrypted transport, message storage and Access protection for the restricted paths. Existing Brevo transactional email handles outbound messages so Cloudflare's paid sending plan is not required.
+The generated public website is in `dist/`. GitHub Pages publishes that directory. Cloudflare continues to provide DNS/HTTPS and handles `/api/*`, inbound mail, encrypted transport, message storage and secure portal sessions. Existing Brevo transactional email handles outbound messages and one-time sign-in codes, so Cloudflare's paid sending plan is not required.
 
 The site remains static HTML by design: its content and SEO needs do not justify React. The mail interface is progressively enhanced JavaScript, while all visual rules—including the portal—remain centralized in `assets/css/master.css`.
 

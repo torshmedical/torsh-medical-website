@@ -7,5 +7,6 @@ window.TORSH_CONFIG = Object.freeze({
   contactPhone: "8800133070",
   enquiryEndpoint: "/api/enquiries",
   adminEndpoint: "/api/admin/enquiries",
-  mailEndpoint: "/api/mail"
+  mailEndpoint: "/api/mail",
+  authEndpoint: "/api/auth"
 });

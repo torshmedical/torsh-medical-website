@@ -349,8 +349,8 @@ def contact() -> None:
 def admin() -> None:
     p='admin.html'
     body=('<div class="container">'+breadcrumbs(p,'Admin sign-in')+'<section class="admin-hero">'+eyebrow('Restricted workspace')
-          +'<h1>Enquiry administration.</h1><p class="lead">This workspace is protected by Cloudflare Access and is available only to approved TORSH administrators.</p></section></div>'
-          +'<section class="section section--soft"><div class="container admin-shell" data-admin-app><div class="admin-toolbar"><div><h2>Contact requests</h2><p>Review, filter and update enquiry status.</p></div><div class="admin-controls"><a class="btn btn--outline" href="mail.html">Open webmail</a><label>Status <select data-admin-filter><option value="all">All</option><option value="new">New</option><option value="in-progress">In progress</option><option value="resolved">Resolved</option></select></label><button class="btn btn--outline" type="button" data-admin-refresh>Refresh</button><a class="text-link" href="https://torshmedical.com/cdn-cgi/access/logout">Sign out</a></div></div><p class="admin-state" data-admin-state role="status" aria-live="polite">Loading enquiries…</p><div class="admin-list" data-admin-list></div></div></section>')
+          +'<h1>Enquiry administration.</h1><p class="lead">This workspace uses secure one-time codes and is available only to approved TORSH administrators.</p></section></div>'
+          +'<section class="section section--soft"><div class="container admin-shell" data-admin-app><div class="admin-toolbar"><div><h2>Contact requests</h2><p>Review, filter and update enquiry status.</p></div><div class="admin-controls"><a class="btn btn--outline" href="mail.html">Open webmail</a><label>Status <select data-admin-filter><option value="all">All</option><option value="new">New</option><option value="in-progress">In progress</option><option value="resolved">Resolved</option></select></label><button class="btn btn--outline" type="button" data-admin-refresh>Refresh</button><a class="text-link" href="login.html" data-auth-logout>Sign out</a></div></div><p class="admin-state" data-admin-state role="status" aria-live="polite">Loading enquiries…</p><div class="admin-list" data-admin-list></div></div></section>')
     render(p,'Admin sign-in | TORSH Medical Technologies','Restricted TORSH enquiry administration.',body,True)
 
 
@@ -362,7 +362,7 @@ def mail() -> None:
           '<button class="mail-icon-button mail-menu-button" type="button" data-mail-menu aria-label="Open mailbox navigation">'+icon('menu')+'</button>'
           '<label class="mail-search"><span class="visually-hidden">Search mail</span>'+icon('search')+'<input type="search" data-mail-search placeholder="Search mail" autocomplete="off"></label>'
           '<div class="mail-account"><span class="mail-account__avatar" data-mail-avatar aria-hidden="true">T</span><span><strong data-mail-identity>Checking access…</strong><small>TORSH secure mail</small></span>'
-          '<a href="https://torshmedical.com/cdn-cgi/access/logout">Sign out</a></div></header>'
+          '<a href="login.html" data-auth-logout>Sign out</a></div></header>'
           '<div class="mail-frame"><aside class="mail-sidebar" data-mail-sidebar><button class="mail-compose" type="button" data-compose-open>'+icon('compose')+'<span>Compose</span></button>'
           '<nav aria-label="Mailbox folders"><button class="is-active" type="button" data-mail-folder="inbox">'+icon('inbox')+'<span>Inbox</span><b data-mail-unread hidden>0</b></button>'
           '<button type="button" data-mail-folder="starred">'+icon('star')+'<span>Starred</span></button><button type="button" data-mail-folder="sent">'+icon('sent')+'<span>Sent</span></button>'

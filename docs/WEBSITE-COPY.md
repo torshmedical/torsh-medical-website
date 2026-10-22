@@ -1183,7 +1183,7 @@ JavaScript is required for this short form. Please email info@torshmedical.com i
 Home Admin sign-in Restricted workspace 
 # Enquiry administration. 
 
-This workspace is protected by Cloudflare Access and is available only to approved TORSH administrators. 
+This workspace uses secure one-time codes and is available only to approved TORSH administrators. 
 
 ## Contact requests 
 

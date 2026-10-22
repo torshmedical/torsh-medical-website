@@ -6,7 +6,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = (ROOT / "dist").resolve()
-PAGES = ["index.html", "about.html", "contact.html", "admin.html", "mail.html", "privacy.html", "404.html"]
+PAGES = ["index.html", "about.html", "contact.html", "admin.html", "mail.html", "login.html", "privacy.html", "404.html"]
 PAGE_DIRS = ["products", "solutions", "insights"]
 IMAGE_FILES = [
     "favicon.svg",

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Secure sign-in | TORSH Medical Technologies</title>
+  <meta name="description" content="Secure sign-in for approved TORSH mail and enquiry administration accounts.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <script src="assets/js/site-config.js" defer></script>
+  <script src="assets/js/login.js" defer></script>
+</head>
+<body class="auth-body">
+  <main class="auth-layout">
+    <section class="auth-brand-panel" aria-labelledby="auth-brand-title">
+      <a class="auth-wordmark" href="index.html" aria-label="TORSH Medical Technologies — home">
+        <img src="assets/images/torsh-wordmark-light.svg" width="448" height="91" alt="TORSH">
+        <span>Medical Technologies</span>
+      </a>
+      <div>
+        <p class="eyebrow">Private workspace</p>
+        <h1 id="auth-brand-title">Your TORSH mailbox, without another password.</h1>
+        <p>Access business email and website enquiries with a short-lived code delivered to your approved TORSH address.</p>
+      </div>
+      <p class="auth-security-note">Encrypted in transit · One-time codes · 12-hour sessions</p>
+    </section>
+
+    <section class="auth-form-panel" data-auth-app>
+      <div class="auth-card">
+        <p class="eyebrow eyebrow--blue">Secure account access</p>
+        <h2>Sign in to TORSH</h2>
+        <p class="auth-intro">Use an approved <strong>@torshmedical.com</strong> address. Your code will also arrive in the existing Gmail backup inbox.</p>
+
+        <form class="auth-form" data-auth-request-form novalidate>
+          <label for="auth-email">TORSH email address</label>
+          <input id="auth-email" name="email" type="email" inputmode="email" autocomplete="username" placeholder="name@torshmedical.com" required>
+          <button class="btn btn--primary auth-submit" type="submit">Send sign-in code</button>
+        </form>
+
+        <form class="auth-form" data-auth-verify-form hidden novalidate>
+          <div class="auth-code-heading">
+            <div>
+              <span>Code sent to</span>
+              <strong data-auth-destination></strong>
+            </div>
+            <button type="button" class="auth-text-button" data-auth-change>Change</button>
+          </div>
+          <label for="auth-code">Six-digit code</label>
+          <input class="auth-code-input" id="auth-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" placeholder="000000" required>
+          <button class="btn btn--primary auth-submit" type="submit">Verify and continue</button>
+          <button type="button" class="auth-resend" data-auth-resend>Send a new code</button>
+        </form>
+
+        <p class="auth-state" data-auth-state role="status" aria-live="polite"></p>
+        <div class="auth-links">
+          <a href="index.html">Return to website</a>
+          <a href="mailto:info@torshmedical.com">Need help?</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -43,6 +43,10 @@
       headers: { "Content-Type": "application/json", ...(options.headers || {}) },
       ...options
     });
+    if (response.status === 401 || response.status === 403) {
+      location.replace("/login.html?next=/mail.html");
+      throw new Error("Sign in is required.");
+    }
     const payload = await response.json().catch(() => ({}));
     if (!response.ok) throw new Error(payload.error || "The mail service could not complete that request.");
     return payload;
@@ -295,6 +299,14 @@
   composeForm.addEventListener("submit", sendMessage);
   composeDialog.addEventListener("click", event => { if (event.target === composeDialog) closeComposer(); });
   document.addEventListener("keydown", event => { if (event.key === "Escape") sidebar.classList.remove("is-open"); });
+  app.querySelector(".mail-account > a")?.addEventListener("click", async event => {
+    event.preventDefault();
+    try {
+      await fetch("/api/auth/logout", { method: "POST", credentials: "same-origin", headers: { Accept: "application/json" } });
+    } finally {
+      location.replace("/login.html");
+    }
+  });
 
   loadProfile();
 })();

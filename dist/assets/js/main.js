@@ -198,7 +198,10 @@
     state.dataset.state = "pending";
     try {
       const response = await fetch(`${endpoint}?status=${encodeURIComponent(status)}`, { headers: { "Accept": "application/json" } });
-      if (response.status === 401 || response.status === 403) throw new Error("Your admin session is not authorised.");
+      if (response.status === 401 || response.status === 403) {
+        location.replace("/login.html?next=/admin.html");
+        return;
+      }
       const payload = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(payload.error || "Unable to load enquiries.");
       renderAdminItems(payload.items || []);
@@ -243,6 +246,13 @@
   document.addEventListener("click", event => {
     const target = event.target instanceof Element ? event.target : null;
     if (!target) return;
+    const logout = target.closest('[data-auth-logout], a[href*="/cdn-cgi/access/logout"]');
+    if (logout) {
+      event.preventDefault();
+      fetch("/api/auth/logout", { method: "POST", credentials: "same-origin", headers: { Accept: "application/json" } })
+        .finally(() => location.replace("/login.html"));
+      return;
+    }
     if (target.closest("[data-search-open]")) { openSearch(); return; }
     if (target.closest("[data-search-close]")) { closeSearch(); return; }
     const insightFilter = target.closest('[data-insight-filter]');
