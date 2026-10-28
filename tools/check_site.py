@@ -30,6 +30,7 @@ class Page(HTMLParser):
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if 'id' in a: self.ids.append(a['id'])
+        if tag == 'base': return
         for key in ('href', 'src'):
             if a.get(key): self.refs.append(a[key])
         if a.get('data-torsh-icon'): self.icons.append(a['data-torsh-icon'])

@@ -1359,3 +1359,31 @@ main:focus { outline: none; }
   .auth-form-panel { padding: 22px 14px; }
   .auth-card { padding: 27px 21px; border-radius: 16px; }
 }
+
+/* 16 — Reversible public maintenance mode. */
+.maintenance-body { min-width: 320px; min-height: 100dvh; color: var(--color-white); background: radial-gradient(circle at 82% 14%, rgb(0 119 204 / 30%), transparent 30%), linear-gradient(145deg, #152333, var(--color-graphite) 58%, #102A43); }
+.maintenance-shell { display: flex; flex-direction: column; min-height: 100dvh; width: min(1180px, calc(100% - 48px)); margin-inline: auto; padding-block: clamp(28px, 5vw, 68px); }
+.maintenance-brand { display: inline-flex; align-items: center; gap: 18px; align-self: flex-start; }
+.maintenance-brand img { width: min(205px, 48vw); }
+.maintenance-brand span { padding-left: 18px; border-left: 1px solid rgb(255 255 255 / 26%); color: #D5DEE7; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; }
+.maintenance-message { width: min(800px, 100%); margin-block: auto; padding-block: clamp(72px, 11vw, 150px); }
+.maintenance-message .eyebrow { color: var(--color-accent-on-dark); }
+.maintenance-message h1 { max-width: 780px; margin-top: 20px; font-size: clamp(3rem, 7.2vw, 6.8rem); line-height: .98; letter-spacing: -.055em; text-wrap: balance; }
+.maintenance-message > p:last-of-type { max-width: 650px; margin-top: 28px; color: var(--color-dark-muted); font-size: clamp(.98rem, 1.5vw, 1.14rem); line-height: 1.8; }
+.maintenance-contact { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 38px; }
+.maintenance-contact a { display: grid; min-width: min(100%, 270px); padding: 16px 20px; border: 1px solid rgb(255 255 255 / 22%); border-radius: var(--radius-md); background: rgb(255 255 255 / 6%); transition: border-color var(--transition-fast), background var(--transition-fast); }
+.maintenance-contact a:hover { border-color: var(--color-accent-on-dark); background: rgb(0 119 204 / 16%); }
+.maintenance-contact span { color: #91A6B8; font-size: .62rem; letter-spacing: .1em; text-transform: uppercase; }
+.maintenance-contact strong { margin-top: 3px; font-size: .84rem; font-weight: 600; }
+.maintenance-footer { display: flex; align-items: center; justify-content: space-between; gap: 22px; padding-top: 22px; border-top: 1px solid rgb(255 255 255 / 15%); color: #95A8B8; font-size: .66rem; }
+.maintenance-footer a { color: #B7C6D3; text-decoration: underline; }
+
+@media (max-width: 600px) {
+  .maintenance-shell { width: min(100% - 36px, 1180px); }
+  .maintenance-brand span { display: none; }
+  .maintenance-message { padding-block: 72px; }
+  .maintenance-message h1 { font-size: clamp(2.8rem, 14vw, 4.3rem); }
+  .maintenance-contact { display: grid; }
+  .maintenance-contact a { min-width: 0; }
+  .maintenance-footer { align-items: flex-start; flex-direction: column; }
+}

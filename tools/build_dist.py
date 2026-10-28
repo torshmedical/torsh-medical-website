@@ -6,7 +6,9 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = (ROOT / "dist").resolve()
+MAINTENANCE_MODE = True  # Set to False and deploy to restore the full public website.
 PAGES = ["index.html", "about.html", "contact.html", "admin.html", "mail.html", "login.html", "privacy.html", "404.html"]
+STAFF_PAGES = ["admin.html", "mail.html", "login.html"]
 PAGE_DIRS = ["products", "solutions", "insights"]
 IMAGE_FILES = [
     "favicon.svg",
@@ -24,17 +26,26 @@ def main() -> int:
     if DIST.exists():
         shutil.rmtree(DIST)
     DIST.mkdir()
-    for name in PAGES:
-        shutil.copy2(ROOT / name, DIST / name)
-    for folder in PAGE_DIRS:
-        shutil.copytree(ROOT / folder, DIST / folder)
+    if MAINTENANCE_MODE:
+        shutil.copy2(ROOT / "maintenance.html", DIST / "index.html")
+        shutil.copy2(ROOT / "maintenance.html", DIST / "404.html")
+        for name in STAFF_PAGES:
+            shutil.copy2(ROOT / name, DIST / name)
+    else:
+        for name in PAGES:
+            shutil.copy2(ROOT / name, DIST / name)
+        for folder in PAGE_DIRS:
+            shutil.copytree(ROOT / folder, DIST / folder)
     for folder in ["css", "js", "icons"]:
         shutil.copytree(ROOT / "assets" / folder, DIST / "assets" / folder)
     images = DIST / "assets" / "images"
     images.mkdir(parents=True)
     for name in IMAGE_FILES:
         shutil.copy2(ROOT / "assets" / "images" / name, images / name)
-    print(f"Built public dist with {len(PAGES) + sum(1 for folder in PAGE_DIRS for _ in (ROOT / folder).glob('*.html'))} pages.")
+    if MAINTENANCE_MODE:
+        print("Built maintenance dist with public routes offline and staff portal retained.")
+    else:
+        print(f"Built public dist with {len(PAGES) + sum(1 for folder in PAGE_DIRS for _ in (ROOT / folder).glob('*.html'))} pages.")
     return 0
 
 
